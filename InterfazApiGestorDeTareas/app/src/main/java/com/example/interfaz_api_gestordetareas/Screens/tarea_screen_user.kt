@@ -235,6 +235,7 @@ fun TareasApp(service: RetrofitService) {
     }
 }
 
+//Plantilla de tarea
 @Composable
 fun TareaCard(
     tarea: Tarea,
@@ -368,6 +369,8 @@ fun TareaCard(
         }
     }
 }
+
+//Agregar tarea a la lista
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
 fun AgregarTareaLista(
