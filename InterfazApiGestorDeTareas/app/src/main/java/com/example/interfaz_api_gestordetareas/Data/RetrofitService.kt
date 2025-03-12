@@ -59,6 +59,9 @@ interface RetrofitService {
         @Body tarea: Tarea
     ): Response<Tarea>
 
+    /*
+    FACTORY USADA DURANTE EL DESARROLLO DE LA APP PARA COMRPOBAR ERRORES MEDIANTE LOG Y DEBUG
+     */
     object RetrofitServiceFactory {
         fun makeRetrofitService(): RetrofitService {
             val loggingInterceptor = HttpLoggingInterceptor().apply {
